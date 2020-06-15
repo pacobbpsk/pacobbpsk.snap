@@ -132,6 +132,7 @@ footer {
   height:100px;
   background-color:black;
   color:white;
+  margin-bottom:0;
 }
 footer h3 {
   float:left;
@@ -145,7 +146,7 @@ footer h3 {
   /* displayをnoneに指定してください */
   display:none;
 }
-@media (max-width:800px){
+@media (max-width:1000px){
   body {
     text-align: center;
     height:3500px;
