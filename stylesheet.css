@@ -146,6 +146,9 @@ footer h3 {
   display:none;
 }
 @media (max-width:1000px){
+  body {
+    text-align: center;
+  }
   .contents-item {
     box-sizing: border-box;
     width:50%;
