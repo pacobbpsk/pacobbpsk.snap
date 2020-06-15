@@ -145,7 +145,7 @@ footer h3 {
   /* displayをnoneに指定してください */
   display:none;
 }
-@media (max-width:1000px){
+@media (max-width:800px){
   body {
     text-align: center;
     height:3500px;
