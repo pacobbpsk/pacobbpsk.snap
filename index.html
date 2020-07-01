@@ -5,6 +5,10 @@
     <title>FASHION SNAP</title>
     <link rel="stylesheet" href="stylesheet.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
   </head>
   <body>
     <div class="header">
@@ -17,10 +21,14 @@
         <a href="#" class="menu-icon">
             <span class="fa fa-bars"></span>
 
-          </a>
-          <a href="#" class="snap">SNAP</a>
-          <a href="#" class="feature">FEATURE</a>
-          <a href="#" class="contact">CONTACT</a>
+       </a>
+       
+         <a href="#" class="snap">SNAP</a>
+         <a href="#" class="feature">FEATURE</a>
+         <a href="#" class="contact">CONTACT</a>
+
+       
+
 
       </div>
       </div>
@@ -34,25 +42,42 @@
        <div class="koumoku-title">
          <h2>SNAP</h2>
        </div>
-       <div class="contents-item">
-         <img class="snap1" src="https://media.istockphoto.com/photos/fashionable-woman-in-pink-dress-on-pink-background-picture-id917325078" alt="">
-         <p>SNAP 1</p>
+    
+       <div class="img-wrapper">
+
+         <div class="contents-item" id="snap1-big">
+           <img class="snap1" src="https://media.istockphoto.com/photos/fashionable-woman-in-pink-dress-on-pink-background-picture-id917325078" alt="">
+           <p>SNAP 1</p>
+         </div>
+         <div class="contents-item" id="snap2-big">
+           <img class="snap2" src="https://media.istockphoto.com/photos/man-dancing-on-red-background-picture-id1156449252" alt="">
+           <p>SNAP 2</p>
+         </div>
+         <div class="contents-item" id="snap3-big">
+           <img class="snap3" src="https://media.istockphoto.com/photos/dont-let-society-dress-me-i-follow-my-own-rules-picture-id937244464" alt="">
+           <p>SNAP 3</p>
+         </div>
+         <div class="contents-item" id="snap4-big">
+           <img class="snap4" src="https://media.istockphoto.com/photos/beautiful-blonde-woman-in-a-coat-picture-id867235160" alt="">
+           <p>SNAP 4</p>
        </div>
-       <div class="contents-item">
-         <img class="snap2" src="https://media.istockphoto.com/photos/man-dancing-on-red-background-picture-id1156449252" alt="">
-         <p>SNAP 2</p>
-       </div>
-       <div class="contents-item">
-         <img class="snap3" src="https://media.istockphoto.com/photos/dont-let-society-dress-me-i-follow-my-own-rules-picture-id937244464" alt="">
-         <p>SNAP 3</p>
-       </div>
-       <div class="contents-item">
-         <img class="snap4" src="https://media.istockphoto.com/photos/beautiful-blonde-woman-in-a-coat-picture-id867235160" alt="">
-         <p>SNAP 4</p>
        </div>
      </div>
    </div>
   </div>
+  <!--モーダル-->
+ <div class="image-modal-wrapper" id="image-modal">
+  <div class="modal" id="modal">
+   
+   <div class="image-Big">
+     
+     <img class="image-big1" src="https://media.istockphoto.com/photos/fashionable-woman-in-pink-dress-on-pink-background-picture-id917325078" alt="">
+     <img class="image-big2" src="https://media.istockphoto.com/photos/man-dancing-on-red-background-picture-id1156449252" alt="">
+     <img class="image-big3" src="https://media.istockphoto.com/photos/dont-let-society-dress-me-i-follow-my-own-rules-picture-id937244464" alt="">
+     <img class="image-big4" src="https://media.istockphoto.com/photos/beautiful-blonde-woman-in-a-coat-picture-id867235160" alt="">
+   </div>
+  </div>
+ </div>
 
 
   <!--特集一覧-->
@@ -85,5 +110,7 @@
     <footer>
       <h3>スナップサイト<h3>
     </footer>
+    <script src="script.js"></script>
+
   </body>
 </html>
