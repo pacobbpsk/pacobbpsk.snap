@@ -1,0 +1,27 @@
+$(function(){
+
+  $('#snap1-big').click(function(){
+    $('.image-big1').fadeIn();
+  });
+  $('#modal').click(function(){
+    $('.image-big1').fadeOut();
+  });
+  $('#snap2-big').click(function(){
+    $('.image-big2').fadeIn();
+  });
+  $('#modal').click(function(){
+    $('.image-big2').fadeOut();
+  });
+  $('#snap3-big').click(function(){
+    $('.image-big3').fadeIn();
+  });
+  $('#modal').click(function(){
+    $('.image-big3').fadeOut();
+  });
+  $('#snap4-big').click(function(){
+    $('.image-big4').fadeIn();
+  });
+  $('#modal').click(function(){
+    $('.image-big4').fadeOut();
+  });
+});
