@@ -237,9 +237,12 @@ footer h3 {
 
 }
 @media (max-width:800px) {
+  body {
+    margin:0 auto;
+  }
   .feature1 img {
     margin:0 auto;
-    width:150px;
-    height:50px;
+    width:50%;
+    height:35%x;
   }
 }
