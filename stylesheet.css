@@ -215,7 +215,7 @@ footer h3 {
 @media (max-width:1000px){
   body {
     text-align: center;
-    height:3500px;
+    height:2500px;
   }
   .contents-item {
     box-sizing: border-box;
@@ -237,10 +237,13 @@ footer h3 {
 
 }
 @media (max-width:800px) {
- 
-  .feature1 img {
+  .feature1{
     margin:0 auto;
-    width:750px;
-    height:500px;
+    text-align: center;
+  }
+  .feature1 img {
+    box-sizing: border-box;
+    width:100%;
+    height:50%;
   }
 }
