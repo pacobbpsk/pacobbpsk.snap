@@ -236,3 +236,10 @@ footer h3 {
 
 
 }
+@media (max-width:600px) {
+  .feature1 img {
+    margin:0 auto;
+    width:100%;
+    
+  }
+}
