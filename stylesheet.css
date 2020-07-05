@@ -230,15 +230,33 @@ footer h3 {
   float: right;
   font-size: 30px;
   display:block;
-
 }
-
+.image-big1 {
+  box-sizing: border-box;
+  width:70%;
+  height:50%;
+}
+.image-big2 {
+  box-sizing: border-box;
+  width:70%;
+  height:50%;
+}
+.image-big3 {
+  box-sizing: border-box;
+  width:70%;
+  height:50%;
+}
+.image-big4 {
+  box-sizing: border-box;
+  width:70%;
+  height:50%;
+}
 
 
 }
 @media (max-width:800px) {
-  .feature1{
-    margin:0 auto;
+  .feature1{ 
+    margin:0 10px;
     text-align: center;
   }
   .feature1 img {
