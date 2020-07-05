@@ -92,7 +92,7 @@ h2 {
   height: auto;
   text-align: center; 
   margin: auto;
-  z-index: 100;
+  z-index: 4;
 }
 .image-big4 {
   display: none;
@@ -104,7 +104,7 @@ h2 {
   height: auto;
   text-align: center; 
   margin: auto;
-  z-index: 100;
+  z-index: 4;
 }
 .image-big2 {
   display: none;
@@ -116,7 +116,7 @@ h2 {
   height: auto;
   text-align: center; 
   margin: auto;
-  z-index: 100;
+  z-index: 4;
 }
 .image-big3 {
   display: none;
@@ -128,7 +128,7 @@ h2 {
   height: auto;
   text-align: center; 
   margin: auto;
-  z-index: 100;
+  z-index: 4;
 }
 .fa-times {
   display: none;
