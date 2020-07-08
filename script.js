@@ -1,25 +1,41 @@
 $(function(){
-
+ 
   $('#snap1-big').click(function(){
     $('.image-big1').fadeIn();
+    $('.image-big2').fadeOut();
+    $('.image-big3').fadeOut();
+    $('.image-big4').fadeOut();
   });
   $('#modal').click(function(){
     $('.image-big1').fadeOut();
   });
+
   $('#snap2-big').click(function(){
     $('.image-big2').fadeIn();
+    $('.image-big1').fadeOut();
+    $('.image-big3').fadeOut();
+    $('.image-big4').fadeOut();
   });
   $('#modal').click(function(){
     $('.image-big2').fadeOut();
+    
   });
+
   $('#snap3-big').click(function(){
     $('.image-big3').fadeIn();
+    $('.image-big2').fadeOut();
+    $('.image-big1').fadeOut();
+    $('.image-big4').fadeOut();
   });
   $('#modal').click(function(){
     $('.image-big3').fadeOut();
   });
+
   $('#snap4-big').click(function(){
     $('.image-big4').fadeIn();
+    $('.image-big2').fadeOut();
+    $('.image-big3').fadeOut();
+    $('.image-big1').fadeOut();
   });
   $('#modal').click(function(){
     $('.image-big4').fadeOut();
