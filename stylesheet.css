@@ -3,7 +3,9 @@ li {
 }
 body {
   height:2500px;
+  min-height:100vh;
   margin:auto;
+  position:relative;
 }
 .header {
   height:150px;
@@ -197,9 +199,12 @@ h2 {
 
 footer {
   height:100px;
+  width:100%;
   background-color:black;
   color:white;
   margin-bottom:0;
+ position:absolute;
+ bottom:0;
 }
 footer h3 {
   float:left;
