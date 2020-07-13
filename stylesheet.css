@@ -221,6 +221,9 @@ footer h3 {
     text-align: center;
     height:3000px;
   }
+  .main {
+    height:2000px;
+  }
   .contents-item {
     box-sizing: border-box;
     width:50%;
