@@ -18,6 +18,23 @@ body {
   background-color: rgba(0,0,0);
   background:cover
 }
+#grav {
+  background-color:rgba(0,0,0,0.5);
+  color:rgba(255,255,255,0.9);
+  float:right;
+  margin-right:0;
+  text-align: center;
+  display:none;
+}
+#grav li {
+  color:white;
+}
+#grav li:hover{
+  opacity:0.5;
+}
+h3 {
+  border-bottom:1px,solid,rgba(255,255,255,0.9);
+}
 .snap {
   color:white;
 }
