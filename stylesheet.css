@@ -207,29 +207,27 @@ footer h3 {
   margin-left: 30px;
 }
 .menu-icon {
-  color: black;
+  color: white;
   float: right;
-  font-size: 30px;
   display:none;
 }
 @media (max-width:1000px){
   body {
     text-align: center;
-    height:2500px;
+    height:3000px;
   }
   .contents-item {
     box-sizing: border-box;
     width:50%;
   }
-  .container a {
+  .snap,.feature,.contact {
     display:none;
   }
 
  .menu-icon {
-  color: black;
-  float: right;
-  font-size: 30px;
-  display:block;
+  color:white;
+  font-size: 100px;
+  display: inline-block;
 }
 .image-big1 {
   box-sizing: border-box;
@@ -255,6 +253,7 @@ footer h3 {
 
 }
 @media (max-width:800px) {
+ 
   .feature1{ 
     margin:0 10px;
     text-align: center;
