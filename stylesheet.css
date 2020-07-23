@@ -1,14 +1,18 @@
 li {
   list-style:none;
 }
+
 body {
   height:2500px;
   min-height:100vh;
-  margin:auto;
-  position:relative;
+  margin:0;
+  display:flex;
+  flex-direction:column;
+  min-height:100vh;
 }
 .header {
   height:150px;
+  margin:0;
   position:fixed;
   top:0px;
   z-index:100;
@@ -17,17 +21,11 @@ body {
   color:black;
   border-bottom: 1px solid black;
 }
-.fa-times {
-  display: none;
-  position: absolute;
-  top: 0px;
-  right: 15px;
-  color: black;
-  cursor: pointer;
-  position:relative;
-}
+
+
 .grav {
   position:absolute;
+  top:0;
   right:0;
   min-height:100vh;
   background-color:white;
@@ -35,10 +33,13 @@ body {
   display:none;
   width:75%;
   border-left:2px solid black;
+ }
+.grav ul {
+  margin:0;
+  padding:0;
 }
-
 h3 {
-  border-bottom:1px,solid,rgba(255,255,255,0.9);
+  border-bottom:1px,solid,black;
 }
 .snap {
   color:black;
@@ -52,6 +53,8 @@ h3 {
 
 h1 {
   font-size:35px;
+  margin:0;
+  padding:25px 0;
 }
 .container {
   text-align: center;
@@ -69,6 +72,7 @@ h1 {
 }
 .main {
   margin-top: 150px;
+  flex:1;
 }
 h2 {
   border-bottom: 1px solid black;
@@ -220,8 +224,8 @@ footer {
   width:100%;
   color:black;
   border-top:1px solid black;
+  margin-top:auto;
   margin-bottom:0;
-
  bottom:0;
 }
 footer h3 {
@@ -230,7 +234,7 @@ footer h3 {
   margin-left: 30px;
 }
 .menu-icon {
-  color: white;
+  color:black;
   float: right;
   display:none;
 }
@@ -251,7 +255,6 @@ footer h3 {
   }
 
  .menu-icon {
-   color:black;
   display: inline-block;
 }
 .image-big1 {
