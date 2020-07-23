@@ -1,5 +1,5 @@
 $(function(){
- 
+  //スナップ写真//
   $('#snap1-big').click(function(){
     $('.image-big1').fadeIn();
     $('.image-big2').fadeOut();
@@ -40,4 +40,15 @@ $(function(){
   $('#modal').click(function(){
     $('.image-big4').fadeOut();
   });
+
+  //メニューバー//
+ $('#menu-icon').click(function(){
+   $('#grav').fadeIn();
+  });
+
+ $('#main').click(function(){
+   $('#grav').fadeOut();
+ }); 
+   
+ 
 });
