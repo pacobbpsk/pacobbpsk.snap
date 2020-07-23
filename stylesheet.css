@@ -1,6 +1,5 @@
 li {
   list-style:none;
-  
 }
 
 body {
@@ -237,14 +236,19 @@ footer h3 {
   margin-left: 30px;
 }
 .menu-icon {
+  position:absolute;
+  top:45px;
+  right:10px;
   color:black;
   float: right;
-  display:none;
 }
 @media (max-width:1000px){
   body {
     text-align: center;
   }
+ .header {
+   height:110px;
+ }
   .main {
     height:2000px;
   }
@@ -256,9 +260,7 @@ footer h3 {
     display:none;
   }
 
- .menu-icon {
-  display: inline-block;
-}
+ 
 .image-big1 {
   box-sizing: border-box;
   
