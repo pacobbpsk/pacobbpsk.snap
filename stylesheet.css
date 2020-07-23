@@ -101,6 +101,9 @@ h2 {
   width:100%;
   height:550px;
 }
+.img-wrapper {
+  padding-top:50px;
+}
 .snap1 {
   height:250px;
   width:166px;
@@ -240,7 +243,6 @@ footer h3 {
 @media (max-width:1000px){
   body {
     text-align: center;
-    height:3000px;
   }
   .main {
     height:2000px;
