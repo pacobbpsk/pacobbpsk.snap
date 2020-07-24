@@ -50,5 +50,7 @@ $(function(){
    $('#grav').fadeOut();
  }); 
    
- 
+ $('.list').click(function(){
+   $('.grav').fadeOut();
+ });
 });
