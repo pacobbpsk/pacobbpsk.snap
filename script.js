@@ -53,4 +53,8 @@ $(function(){
  $('.list').click(function(){
    $('.grav').fadeOut();
  });
+
+ $('.topPage').click(function(){
+   $('html,body').scrollTop(0);
+ });
 });
