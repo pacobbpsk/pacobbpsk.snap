@@ -10,16 +10,28 @@ body {
   min-height:100vh;
 }
 .header {
-  height:150px;
   margin:0;
   position:fixed;
   top:0px;
   z-index:100;
   width:100%;
   text-align: center;
-  color:black;
+  background-color: black;
+  color:white;
+  padding-bottom: 10px;
 }
-
+h1 {
+  color: white;
+}
+.snap {
+  color: white;
+}
+.feature {
+  color: white;
+}
+.contact {
+  color: white;
+}
 
 .grav {
   position:absolute;
@@ -39,22 +51,13 @@ body {
 h3 {
   border-bottom:1px,solid,black;
 }
-.snap {
-  color:black;
-}
-.feature {
-  color:black;
-}
-.contact {
-  color:black;
-}
+
 
 h1 {
   font-size:35px;
   margin:0;
   padding:25px 0;
   cursor: pointer;
-  color: black;
 }
 .topPage {
   text-decoration: none;
@@ -242,7 +245,8 @@ textarea {
 footer {
   height:100px;
   width:100%;
-  color:black;
+  background-color:black;
+  color:white;
   border-top:1px solid black;
   margin-top:auto;
   margin-bottom:0;
@@ -257,7 +261,7 @@ footer h3 {
   position:absolute;
   top:45px;
   right:10px;
-  color:black;
+  color:white;
   float: right;
 }
 @media (max-width:1000px){
