@@ -254,6 +254,9 @@ footer h3 {
   color:white;
   float: right;
 }
+.menu-icon:hover {
+  opacity:0.8;
+}
 @media (max-width:1000px){
   body {
     text-align: center;
