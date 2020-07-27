@@ -36,6 +36,19 @@ h1 {
   width:75%;
   border-left:2px solid black;
  }
+ 
+ .close-btn {
+  text-decoration: none;
+  color:black;
+  float: right;
+  position:absolute;
+  top:65px;
+  right:10px;
+  font-size:50px;
+ }
+ .close-btn:hover {
+   opacity:0.1;
+ }
 .grav ul {
   margin:0;
   padding:0;
@@ -255,7 +268,7 @@ footer h3 {
   float: right;
 }
 .menu-icon:hover {
-  opacity:0.8;
+  opacity:0.5;
 }
 @media (max-width:1000px){
   body {
