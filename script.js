@@ -45,7 +45,9 @@ $(function(){
  $('#menu-icon').click(function(){
    $('#grav').fadeIn();
   });
-
+ $('.close-btn').click(function(){
+   $('#grav').fadeOut();
+ });
  $('#main').click(function(){
    $('#grav').fadeOut();
  }); 
@@ -56,5 +58,12 @@ $(function(){
 
  $('.topPage').click(function(){
    $('html,body').scrollTop(0);
+ });
+
+ $('.scroll-btn').click(function(){
+   var id =$(this).attr(href);
+   var position = $(id).offset().top;
+
+   $('html,body').scrollTop(position);
  });
 });
