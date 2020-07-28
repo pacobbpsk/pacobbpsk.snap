@@ -325,5 +325,6 @@ footer h3 {
   }
   footer{
     text-align: center;
+    display:none;
   }
 }
