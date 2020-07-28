@@ -47,7 +47,6 @@ h1 {
   position:absolute;
   top:65px;
   right:10px;
-  font-size:30px;
  }
  .close-btn:hover {
    opacity:0.3;
@@ -273,6 +272,8 @@ footer h3 {
 .menu-icon:hover {
   opacity:0.5;
 }
+
+
 @media (max-width:1000px){
   body {
     text-align: center;
@@ -312,7 +313,7 @@ footer h3 {
 
 
 }
-@media (max-width:800px) {
+@media (max-width:850px) {
  
   .feature1{ 
     margin:0 10px;
@@ -325,6 +326,5 @@ footer h3 {
   }
   footer{
     text-align: center;
-    display:none;
   }
 }
