@@ -275,9 +275,7 @@ footer h3 {
 
 
 @media (max-width:1000px){
-  body {
-    text-align: center;
-  }
+ 
  .header {
    height:110px;
  }
