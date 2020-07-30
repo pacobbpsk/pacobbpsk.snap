@@ -321,7 +321,18 @@ footer h3 {
 
 }
 @media (max-width:850px) {
- 
+ .header {
+   height:80px;
+ } 
+ h1 {
+   font-size:20px;
+   float:left;
+   padding:0;
+   margin-left:15px;
+ }
+ .menu-icon {
+   top:25px;
+ }
   .feature1{ 
     margin:0 10px;
     
