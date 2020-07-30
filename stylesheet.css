@@ -283,12 +283,7 @@ footer h3 {
 
 
 @media (max-width:1000px){
-  
- .header {
- }
-  .main {
-    height:2000px;
-  }
+ 
   
   .scroll-btn {
     display:none;
@@ -385,7 +380,7 @@ footer h3 {
   }
   footer{
     text-align: center;
-    display:none;
+  
   }
 
 }
