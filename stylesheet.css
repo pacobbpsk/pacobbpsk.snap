@@ -119,7 +119,6 @@ h2 {
 .contents {
   margin:0 auto;
   width:100%;
-  height:550px;
 }
 .img-wrapper {
   padding-top:50px;
@@ -354,20 +353,20 @@ footer h3 {
  }
  
  .snap1 {
-   height:65%;
-   width:30%;
+   height:70%;
+   width:40%;
  }
  .snap2 {
-   height:65%;
-   width:30%;
+   height:70%;
+   width:40%;
  }
  .snap3 {
-   height:65%;
-   width:30%;
+   height:70%;
+   width:40%;
  }
  .snap4 {
-   height:65%;
-   width:30%;
+   height:70%;
+   width:40%;
  }
  
   .feature1{ 
