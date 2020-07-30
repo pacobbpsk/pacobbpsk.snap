@@ -285,7 +285,6 @@ footer h3 {
 @media (max-width:1000px){
   
  .header {
-   height:110px;
  }
   .main {
     height:2000px;
@@ -318,7 +317,6 @@ footer h3 {
 }
 @media (max-width:850px) {
  .header {
-   height:80px;
  }
  
  h1 {
