@@ -341,6 +341,12 @@ footer h3 {
  .menu-icon {
    top:25px;
  }
+ .close-btn {
+   top:40px;
+ }
+ .grav h3 {
+   margin-top:25px;
+ }
  .img-wrapper {
    display:flex;
    flex-wrap:wrap;
