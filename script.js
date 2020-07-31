@@ -1,5 +1,8 @@
 $(function(){
   //スナップ写真//
+  $('.snap1').click(function(){
+    $('#image-modal').fadeIn();
+  });
   $('#snap1-big').click(function(){
     $('.image-big1').fadeIn();
     $('.image-big2').fadeOut();
@@ -8,6 +11,7 @@ $(function(){
   });
   $('#modal').click(function(){
     $('.image-big1').fadeOut();
+    $('#image-modal').fadeOut();
   });
 
   $('#snap2-big').click(function(){
@@ -56,14 +60,10 @@ $(function(){
    $('.grav').fadeOut();
  });
 
- $('.topPage').click(function(){
+ $('.header').click(function(){
    $('html,body').scrollTop(0);
  });
 
- $('.scroll-btn').click(function(){
-   var id =$(this).attr(href);
-   var position = $(id).offset().top;
+ 
 
-   $('html,body').scrollTop(position);
- });
 });
