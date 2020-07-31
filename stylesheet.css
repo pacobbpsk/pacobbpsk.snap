@@ -39,14 +39,27 @@ h1 {
   font-size:30px;
  }
  .grav h3 {
-   margin-top:65px;
+   margin-top:45px;
  }
+
+ .menu-icon {
+  position:absolute;
+  top:45px;
+  right:10px;
+  color:white;
+  float: right;
+}
+
+.menu-icon:hover {
+  opacity:0.5;
+}
+
  .close-btn {
   text-decoration: none;
   color:black;
   float: right;
   position:absolute;
-  top:65px;
+  top:45px;
   right:10px;
  }
  .close-btn:hover {
@@ -269,17 +282,7 @@ footer h3 {
   margin-top:30px;
   margin-left: 30px;
 }
-.menu-icon {
-  position:absolute;
-  top:65px;
-  right:10px;
-  color:white;
-  float: right;
-}
 
-.menu-icon:hover {
-  opacity:0.5;
-}
 
 
 @media (max-width:1000px){
@@ -330,7 +333,7 @@ footer h3 {
    font-size:20px;
  }
  .menu-icon {
-   top:10px;
+   top:15px;
  }
  .close-btn {
    top:40px;
