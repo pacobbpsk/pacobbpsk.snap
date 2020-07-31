@@ -196,7 +196,14 @@ h2 {
   margin: auto;
   z-index: 4;
 }
+.select-number-wrapper {
+  font-size:20px;
+  margin-top:20px;
+}
+.select-number {
+  display:inline-block;
 
+}
 .contents p {
   font-size: 20px;
   margin:20px;
@@ -209,8 +216,22 @@ h2 {
 }
 
 /*特集*/
+
+.select-btn-wrapper {
+  font-size:25px;
+  color:white;
+}
+.select-btn {
+  display:inline-block;
+  margin-bottom:20px;
+  background-color: black;
+  padding:10px 20px;
+  cursor:pointer;
+}
+.select-btn:hover {
+  opacity:0.5;
+}
 .feature2 a {
-  text-align: center;
   margin:30px 0 10px 0;
   font-size:25px;
   cursor:pointer;
@@ -220,13 +241,21 @@ h2 {
   opacity:0.3;
 }
 .feature1 img {
-  float:inherit;
   margin-top: 50px;
   margin-bottom: 50px;
 }
 .feature0 {
   text-align: center;
 }
+
+.sneaker1 {
+  display:none;
+}
+
+.active {
+  display:inline-block;
+}
+
 
 /*問い合わせ*/
 .contactPage {
@@ -310,6 +339,10 @@ footer h3 {
  }
  .main {
    margin:110px 0;
+ }
+ .select-btn {
+   font-size:8px;
+   padding:5px 10px;
  }
  .feature2 a{
    font-size:20px;
