@@ -10,7 +10,6 @@ $(function(){
     $('.image-big4').fadeOut();
   });
   $('#modal').click(function(){
-    $('.image-big1').fadeOut();
     $('#image-modal').fadeOut();
   });
 
@@ -20,10 +19,7 @@ $(function(){
     $('.image-big3').fadeOut();
     $('.image-big4').fadeOut();
   });
-  $('#modal').click(function(){
-    $('.image-big2').fadeOut();
-    
-  });
+  
 
   $('#snap3-big').click(function(){
     $('.image-big3').fadeIn();
@@ -31,9 +27,7 @@ $(function(){
     $('.image-big1').fadeOut();
     $('.image-big4').fadeOut();
   });
-  $('#modal').click(function(){
-    $('.image-big3').fadeOut();
-  });
+  
 
   $('#snap4-big').click(function(){
     $('.image-big4').fadeIn();
@@ -41,9 +35,13 @@ $(function(){
     $('.image-big3').fadeOut();
     $('.image-big1').fadeOut();
   });
-  $('#modal').click(function(){
-    $('.image-big4').fadeOut();
-  });
+ //特集//
+ $('.select-btn').click(function(){
+   $('.active').removeClass('active')
+   var selectIndex = $('.select-btn').index($(this));
+
+   $('.sneaker1').eq(selectIndex).addClass('active');
+ });
 
   //メニューバー//
  $('#menu-icon').click(function(){
