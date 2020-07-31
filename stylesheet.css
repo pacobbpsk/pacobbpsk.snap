@@ -8,6 +8,7 @@ body,#wrapper {
   flex-direction:column;
   min-height: 100vh;
 }
+/*ヘッダー*/
 .header {
   margin:0;
   position:fixed;
@@ -21,11 +22,16 @@ body,#wrapper {
 h1 {
   color: white;
   padding:0;
+  font-size:35px;
+  margin:0;
+  cursor: pointer;
 }
 .scroll-btn {
   color:white;
 }
-
+.scroll-btn:hover {
+  opacity:0.5;
+}
 .grav {
   position:absolute;
   top:0;
@@ -79,19 +85,12 @@ h3 {
   border-bottom:1px,solid,black;
 }
 
-
-h1 {
-  font-size:35px;
-  margin:0;
-  cursor: pointer;
-}
 .topPage {
   text-decoration: none;
 }
 .container {
   text-align: center;
 }
-
 .container a {
 
   font-size:20px;
@@ -99,6 +98,8 @@ h1 {
   margin-left:10px;
   margin-right: 10px;
 }
+
+/*メインコンテンツ*/
 .main {
   margin-top: 150px;
   flex:1;
@@ -110,15 +111,6 @@ h2 {
   padding:25px 0;
   color:black;
   
-}
-.snap:hover {
-  opacity: 0.3;
-  }
-.feature:hover {
-  opacity: 0.3;
-}
-.contact:hover {
- opacity:0.3;
 }
 
 .koumoku-title {
@@ -138,8 +130,6 @@ h2 {
 .snap1 {
   height:250px;
   width:166px;
-  
-  
 }
 .snap1:hover {
   opacity:0.3;
