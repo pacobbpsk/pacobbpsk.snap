@@ -127,6 +127,7 @@ h2 {
 .img-wrapper {
   padding-top:50px;
 }
+/*スナップ写真*/
 .snap1 {
   height:250px;
   width:166px;
@@ -134,31 +135,6 @@ h2 {
 .snap1:hover {
   opacity:0.3;
 }
-
-.snap2 {
-  height:250px;
-  width:166px;
-  
-}
-.snap2:hover {
-  opacity:0.3;
-}
-.snap3 {
-  height:250px;
-  width:166px;
-}
-.snap3:hover {
-  opacity:0.3;
-}
-.snap4 {
-  height:250px;
-  width:166px;
-}
-.snap4:hover {
-  opacity:0.3;
-}
-
-
 .image-big1 {
   display: none;
   position: fixed;
@@ -220,7 +196,7 @@ h2 {
 
 }
 
-
+/*特集*/
 .feature2 a {
   text-align: center;
   margin:30px 0 10px 0;
@@ -239,6 +215,8 @@ h2 {
 .feature0 {
   text-align: center;
 }
+
+/*問い合わせ*/
 .contactPage {
   text-align: center;
 }
@@ -259,6 +237,8 @@ textarea {
 .contact-contents p {
   font-size:25px;
 }
+
+/*フッター */
 footer {
   
   width:100%;
