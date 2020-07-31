@@ -283,7 +283,6 @@ footer h3 {
 
 @media (max-width:1000px){
  
-  
   .scroll-btn {
     display:none;
   }
@@ -315,6 +314,8 @@ footer h3 {
    float:left;
    padding:0;
    margin-left:15px;
+   position:absolute;
+   top:15px;
  }
  h2 {
    font-size:25px;
