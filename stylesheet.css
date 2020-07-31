@@ -1,386 +1,147 @@
-li {
-  list-style:none;
-}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>FASHION SNAP</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-body,#wrapper {
-  margin:0;
-  display:flex;
-  flex-direction:column;
-  min-height: 100vh;
-}
-.header {
-  margin:0;
-  position:fixed;
-  top:0px;
-  z-index:100;
-  width:100%;
-  text-align: center;
-  background-color: black;
-  color:white;
-}
-h1 {
-  color: white;
-  padding:0;
-}
-.scroll-btn {
-  color:white;
-}
-
-.grav {
-  position:absolute;
-  top:0;
-  right:0;
-  min-height:100vh;
-  background-color:white;
-  color:black;
-  display:none;
-  width:75%;
-  border-left:2px solid black;
-  font-size:30px;
- }
- .grav h3 {
-   margin-top:65px;
- }
- .close-btn {
-  text-decoration: none;
-  color:black;
-  float: right;
-  position:absolute;
-  top:65px;
-  right:10px;
- }
- .close-btn:hover {
-   opacity:0.3;
- }
-.grav ul {
-  margin:0;
-  padding:0;
-}
-.list {
-  color:black;
-}
-.list:hover {
-  opacity:0.5;
-}
-h3 {
-  border-bottom:1px,solid,black;
-}
-
-
-h1 {
-  font-size:35px;
-  margin:0;
-  cursor: pointer;
-}
-.topPage {
-  text-decoration: none;
-}
-.container {
-  text-align: center;
-}
-
-.container a {
-
-  font-size:20px;
-  list-style: none;
-  margin-left:10px;
-  margin-right: 10px;
-}
-.main {
-  margin-top: 150px;
-  flex:1;
-}
-h2 {
-  font-size:35px;
-  text-align: center;
-  border-bottom: 1px solid black;
-  padding:25px 0;
-  color:black;
-  
-}
-.snap:hover {
-  opacity: 0.3;
-  }
-.feature:hover {
-  opacity: 0.3;
-}
-.contact:hover {
- opacity:0.3;
-}
-
-.koumoku-title {
-  font-size:20px;
-  text-align: center;
-  margin:30px 50px;
-}
-
-
-.contents {
-  margin:0 auto;
-  width:100%;
-}
-.img-wrapper {
-  padding-top:50px;
-}
-.snap1 {
-  height:250px;
-  width:166px;
-  
-  
-}
-.snap1:hover {
-  opacity:0.3;
-}
-
-.snap2 {
-  height:250px;
-  width:166px;
-  
-}
-.snap2:hover {
-  opacity:0.3;
-}
-.snap3 {
-  height:250px;
-  width:166px;
-}
-.snap3:hover {
-  opacity:0.3;
-}
-.snap4 {
-  height:250px;
-  width:166px;
-}
-.snap4:hover {
-  opacity:0.3;
-}
-
-
-.image-big1 {
-  display: none;
-  position: fixed;
-  top: 0;
-  right:0;
-  bottom:0;
-  left: 0;
-  height:55%;
-  text-align: center; 
-  margin: auto;
-  z-index: 4;
-  background-color: rgba(0,0,0,0.6);
-}
-.image-big2 {
-  display: none;
-  position: fixed;
-  top: 0;
-  right:0;
-  bottom:0;
-  left: 0;
-  height: 55%;
-  text-align: center; 
-  margin: auto;
-  z-index: 4;
-}
-.image-big3 {
-  display: none;
-  position: fixed;
-  top: 0;
-  right:0;
-  bottom:0;
-  left: 0;
-  height: 55%;
-  text-align: center; 
-  margin: auto;
-  z-index: 4;
-}
-.image-big4 {
-  display: none;
-  position: fixed;
-  top: 0;
-  right:0;
-  bottom:0;
-  left: 0;
-  height: 55%;
-  text-align: center; 
-  margin: auto;
-  z-index: 4;
-}
-
-.contents p {
-  font-size: 20px;
-  margin:20px;
-}
-
-.contents-item {
-  width:25%;
-  float:left;
-
-}
-
-
-.feature2 a {
-  text-align: center;
-  margin:30px 0 10px 0;
-  font-size:25px;
-  cursor:pointer;
-  color:black;
-}
-.feature1 a:hover {
-  opacity:0.3;
-}
-.feature1 img {
-  float:inherit;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-.feature0 {
-  text-align: center;
-}
-.contactPage {
-  text-align: center;
-}
-textarea {
-  width:60%;
-  margin-bottom:10px;
-}
-.submit {
-  cursor: pointer;
-  width:100px;
-  margin-bottom:25px;
-}
-.contact-contents {
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-}
-.contact-contents p {
-  font-size:25px;
-}
-footer {
-  
-  width:100%;
-  background-color:black;
-  color:white;
-  margin-top:auto;
-  margin-bottom:0;
-  
-}
-footer h3 {
-  margin-top:30px;
-  margin-left: 30px;
-}
-.menu-icon {
-  position:absolute;
-  top:65px;
-  right:10px;
-  color:white;
-  float: right;
-}
-.menu-icon:hover {
-  opacity:0.5;
-}
-
-
-@media (max-width:1000px){
- 
-  .scroll-btn {
-    display:none;
-  }
-
- 
-.image-big1 {
-  box-sizing: border-box;
-  
-  height:60%;
-}
-.image-big2 {
-  box-sizing: border-box;
-  height:60%;
-}
-.image-big3 {
-  box-sizing: border-box;
-  height:60%;
-}
-.image-big4 {
-  box-sizing: border-box;
-  height:60%;
-}
-
-
-}
-@media (max-width:850px) {
- h1 {
-   font-size:20px;
-   float:left;
-   padding:0;
-   margin-left:15px;
-   position:absolute;
-   top:15px;
- }
- h2 {
-   font-size:25px;
-   padding:0;
-   margin:0;
- }
- .main {
-   margin:110px 0;
- }
- .feature2 a{
-   font-size:20px;
- }
- .menu-icon {
-   top:10px;
- }
- .close-btn {
-   top:40px;
- }
- .grav h3 {
-   margin-top:25px;
- }
- .img-wrapper {
-   display:flex;
-   flex-wrap:wrap;
- }
- .contents-item {
-   width:50%;
- }
- .contents p{
-  font-size:15px;
- }
- 
- .snap1 {
-   height:70%;
-   width:40%;
- }
- .snap2 {
-   height:70%;
-   width:40%;
- }
- .snap3 {
-   height:70%;
-   width:40%;
- }
- .snap4 {
-   height:70%;
-   width:40%;
- }
- 
-  .feature1{ 
-    margin:0 10px;
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     
-  }
-  .feature1 img {
-    box-sizing: border-box;
-    width:100%;
-    height:50%;
-    width:60%;
-  }
-  .contactPage p{
-    font-size:20px;
-  }
-  footer{
-    text-align: center;
-  
-  }
 
-}
+  </head>
+  <body id="body">
+    <div id="wrapper">
+    <div class="header">
+      <div class="container">
+
+        <div class="container-tiltle">
+          <a href="#" class="menu-icon" id="menu-icon"><span class="fa fa-bars fa-lg"></span></a>
+          <a href="#header" class="topPage">
+            <div>
+              <h1>FASHION SNAP</h1>
+
+            </div>
+
+          </a>
+
+        
+       
+         <a href="#SNAP" class="scroll-btn">SNAP</a>
+         <a href="#FEATURE" class="scroll-btn">FEATURE</a>
+         <a href="#CONTACT" class="scroll-btn">CONTACT</a>
+
+       
+
+
+      </div>
+      <nav id="grav" class="grav">
+        <div class="grav-wrapper">
+          <h3>Menu</h3><a href="#" class="close-btn">✖️</a>
+          <ul>
+           <li><a href="#SNAP" class="list">SNAP</a></li>
+           <li><a href="#FEATURE" class="list">FEATURE</a></li>
+           <li><a href="#CONTACT" class="list">CONTACT</a></li>
+          </ul>
+
+        </div>
+        
+      </nav>
+      </div>
+    </div>
+
+
+  <!--スナップ写真一覧-->
+    <div class="main" id="main">
+    <div class="container">
+     <div class="contents">
+       <div class="koumoku-title" id="SNAP">
+         <h2>SNAP</h2>
+       </div>
+    
+       <div class="img-wrapper">
+
+         <div class="contents-item" id="snap1-big">
+           <img class="snap1" src="https://media.istockphoto.com/photos/beautiful-fashionable-blonde-woman-in-pink-bra-shirt-and-pants-and-picture-id918984534" alt="">
+           <p>SNAP 1</p>
+         </div>
+         <div class="contents-item" id="snap2-big">
+           <img class="snap2" src="https://media.istockphoto.com/photos/man-dancing-on-red-background-picture-id1156449252" alt="">
+           <p>SNAP 2</p>
+         </div>
+         <div class="contents-item" id="snap3-big">
+           <img class="snap3" src="https://media.istockphoto.com/photos/dont-let-society-dress-me-i-follow-my-own-rules-picture-id937244464" alt="">
+           <p>SNAP 3</p>
+         </div>
+         <div class="contents-item" id="snap4-big">
+           <img class="snap4" src="https://media.istockphoto.com/photos/beautiful-blonde-woman-in-a-coat-picture-id867235160" alt="">
+           <p>SNAP 4</p>
+       </div>
+       </div>
+     </div>
+   </div>
+  
+  <!--モーダル-->
+ <div class="image-modal-wrapper" id="image-modal">
+  <div class="modal" id="modal">
+   
+   <div id="image-Big" class="imageBig">
+     
+     <img class="image-big1" src="https://media.istockphoto.com/photos/beautiful-fashionable-blonde-woman-in-pink-bra-shirt-and-pants-and-picture-id918984534" alt="">
+     <img class="image-big2" src="https://media.istockphoto.com/photos/man-dancing-on-red-background-picture-id1156449252" alt="">
+     <img class="image-big3" src="https://media.istockphoto.com/photos/dont-let-society-dress-me-i-follow-my-own-rules-picture-id937244464" alt="">
+     <img class="image-big4" src="https://media.istockphoto.com/photos/beautiful-blonde-woman-in-a-coat-picture-id867235160" alt="">
+   </div>
+  </div>
+ </div>
+
+
+  <!--特集一覧-->
+    <div class="feature0">
+    <div class="koumoku-title" id="FEATURE">
+      <h2>FEATURE</h2>
+    </div>
+    <div class="feature1">
+
+      <div class="feature2">
+        <a href=# class="sneaker" target="_blank">スニーカー特集</a>
+      </div>
+      <img src="https://media.istockphoto.com/photos/great-sneaker-picture-id1079117394" width="800" height="500" alt="">
+
+      <div class="feature2"> 
+        <a href=# class="newcollection" target="_blank">最新コレクション</a>
+      </div>
+      <img src="https://media.istockphoto.com/photos/catwalk-runway-show-event-picture-id940236760" width="800" height="500" alt="">
+
+      <div class="feature2">
+        <a href=# class="archive" target="_blank">アーカイブ特集</a>
+      </div>
+      <img src="https://media.istockphoto.com/photos/interior-of-clothing-store-picture-id1023611588" width="800" height="500" alt="">
+
+
+    </div>
+
+    </div>
+
+    <div class="contactPage">
+      <div class="koumoku-title" id="CONTACT">
+        <h2>CONTACT</h2>
+      </div>
+      <div class="contact-contents">
+        <p>お問い合わせ</p>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+  
+        <input type="submit" class="submit">
+        
+      </div>
+    </div>
+  </div>
+
+  <footer>
+   <h3>スナップサイト<h3>
+  </footer>
+    <script src="script.js"></script>
+  </div>
+  </body>
+</html>
