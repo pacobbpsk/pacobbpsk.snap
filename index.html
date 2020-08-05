@@ -14,7 +14,7 @@
   <body id="body">
     <div id="wrapper">
     <div class="header">
-      <div class="container">
+      <div class="headcontainer">
 
         <div class="container-tiltle">
           <a href="#" class="menu-icon" id="menu-icon"><span class="fa fa-bars fa-lg"></span></a>
@@ -27,10 +27,10 @@
           </a>
 
         
-       
-         <a href="#SNAP" class="scroll-btn">SNAP</a>
-         <a href="#FEATURE" class="scroll-btn">FEATURE</a>
-         <a href="#CONTACT" class="scroll-btn">CONTACT</a>
+          <a href="#SNAP" class="scroll-btn">SNAP</a>
+          <a href="#FEATURE" class="scroll-btn">FEATURE</a>
+          <a href="#CONTACT" class="scroll-btn">CONTACT</a>
+
 
        
 
@@ -105,7 +105,7 @@
     <div class="feature1">
 
       <div class="feature2">
-        <a href=# class="sneaker" target="_blank">スニーカー特集</a>
+        <a href="sneaker.html" class="sneaker">スニーカー特集</a>
       </div>
       
       <img class="sneaker1 active" src="https://media.istockphoto.com/photos/great-sneaker-picture-id1079117394" width="800" height="500" alt="">
@@ -133,16 +133,21 @@
     </div>
 
     </div>
-
+   <!--問い合わせ-->
     <div class="contactPage">
       <div class="koumoku-title" id="CONTACT">
         <h2>CONTACT</h2>
       </div>
+
       <div class="contact-contents">
         <p>お問い合わせ</p>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-  
-        <input type="submit" class="submit">
+        <form action="sent.php">
+
+          <textarea name="contact" id="" cols="100" rows="10"></textarea>
+          <br>
+    
+          <input type="submit" class="submit">
+        </form>
         
       </div>
     </div>
