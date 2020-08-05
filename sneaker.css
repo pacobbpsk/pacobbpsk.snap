@@ -61,3 +61,11 @@ footer {
 h4 {
   margin-left:20px;
 }
+
+@media (orientation:portrait) {
+  main {
+    margin-top:100px;
+    margin-right:120px;
+    margin-left:120px;
+  }
+}
