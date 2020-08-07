@@ -43,7 +43,7 @@ h1:hover {
   background-color:white;
   color:black;
   display:none;
-  width:75%;
+  width:50%;
   border-left:2px solid black;
   font-size:30px;
  }
@@ -444,5 +444,18 @@ footer p {
   .contactPage p{
     font-size:20px;
   }
-
+  
+  
+}
+@media (max-width:580px){
+  form {
+    width:350px;
+    margin:0 20px;
+  }
+  textarea {
+    width:100%;
+  }
+  .contactName {
+    width:100%;
+  }
 }
