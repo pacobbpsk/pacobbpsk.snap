@@ -1,162 +1,447 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>FASHION SNAP</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+li {
+  list-style:none;
+}
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    
+body,#wrapper {
+  margin:0;
+  display:flex;
+  flex-direction:column;
+  min-height: 100vh;
+}
+/*ヘッダー*/
+.header {
+  margin:0;
+  position:fixed;
+  top:0px;
+  z-index:80;
+  width:100%;
+  color:black;
+  float: left;
+}
+h1 {
+  color:black;
+  padding:0;
+  font-size:35px;
+  margin:10px 0 0 20px;
+  cursor: pointer;
+}
+h1:hover {
+  opacity:0.3;
+}
+.scroll-btn {
+  color:black;
+  margin-left:20px;
+}
+.scroll-btn:hover {
+  opacity:0.5;
+}
+.grav {
+  position:absolute;
+  top:0;
+  right:0;
+  min-height:100vh;
+  background-color:white;
+  color:black;
+  display:none;
+  width:75%;
+  border-left:2px solid black;
+  font-size:30px;
+ }
+ .grav h3 {
+   margin-top:45px;
+ }
 
-  </head>
-  <body id="body">
-    <div id="wrapper">
-    <div class="header">
-      <div class="headcontainer">
+ .menu-icon {
+  color:black;
+  float: right;
+  font-size:20px;
+}
 
-        <div class="container-tiltle">
-          <a href="#" class="menu-icon" id="menu-icon"><span class="fa fa-bars fa-lg"></span></a>
-          <a href="#header" class="topPage">
-            <div>
-              <h1>FASHION SNAP</h1>
-
-            </div>
-
-          </a>
-
-        
-          <a href="#SNAP" class="scroll-btn">SNAP</a>
-          <a href="#FEATURE" class="scroll-btn">FEATURE</a>
-          <a href="#CONTACT" class="scroll-btn">CONTACT</a>
-
-
-       
-
-
-      </div>
-      <nav id="grav" class="grav">
-        <div class="grav-wrapper">
-          <h3>Menu</h3><a href="#" class="close-btn">✖️</a>
-          <ul>
-           <li><a href="#SNAP" class="list">SNAP</a></li>
-           <li><a href="#FEATURE" class="list">FEATURE</a></li>
-           <li><a href="#CONTACT" class="list">CONTACT</a></li>
-          </ul>
-
-        </div>
-        
-      </nav>
-      </div>
-    </div>
-
-
-  <!--スナップ写真一覧-->
-    <div class="main" id="main">
-    <div class="container">
-     <div class="contents">
-       <div class="koumoku-title" id="SNAP">
-         <h2>SNAP</h2>
-       </div>
-    
-       <div class="img-wrapper">
-
-         <div class="contents-item" id="snap1-big">
-           <img class="snap1" src="https://media.istockphoto.com/photos/beautiful-fashionable-blonde-woman-in-pink-bra-shirt-and-pants-and-picture-id918984534" alt="">
-           <p>SNAP 1</p>
-         </div>
-         <div class="contents-item" id="snap2-big">
-           <img class="snap1" src="https://media.istockphoto.com/photos/man-dancing-on-red-background-picture-id1156449252" alt="">
-           <p>SNAP 2</p>
-         </div>
-         <div class="contents-item" id="snap3-big">
-           <img class="snap1" src="https://media.istockphoto.com/photos/dont-let-society-dress-me-i-follow-my-own-rules-picture-id937244464" alt="">
-           <p>SNAP 3</p>
-         </div>
-         <div class="contents-item" id="snap4-big">
-           <img class="snap1" src="https://media.istockphoto.com/photos/beautiful-blonde-woman-in-a-coat-picture-id867235160" alt="">
-           <p>SNAP 4</p>
-       </div>
-       </div>
-     </div>
-   </div>
+.menu-icon:hover {
+  opacity:0.5;
+}
+.icon {
+  position:absolute;
+  top:45px;
+  right:25px;
+}
+ .close-btn {
+  text-decoration: none;
+  color:black;
+  float: right;
   
-  <!--モーダル-->
- <div class="image-modal-wrapper" id="image-modal">
-  <div class="modal" id="modal">
-   
-   <div id="image-Big" class="imageBig">
-     
-     <img class="image-big1" src="https://media.istockphoto.com/photos/beautiful-fashionable-blonde-woman-in-pink-bra-shirt-and-pants-and-picture-id918984534" alt="">
-     <img class="image-big2" src="https://media.istockphoto.com/photos/man-dancing-on-red-background-picture-id1156449252" alt="">
-     <img class="image-big3" src="https://media.istockphoto.com/photos/dont-let-society-dress-me-i-follow-my-own-rules-picture-id937244464" alt="">
-     <img class="image-big4" src="https://media.istockphoto.com/photos/beautiful-blonde-woman-in-a-coat-picture-id867235160" alt="">
-   </div>
-  </div>
- </div>
+ }
+ .close-btn:hover {
+   opacity:0.3;
+ }
+.grav ul {
+  margin:0;
+  padding:0;
+}
+.list {
+  color:black;
+}
+.list:hover {
+  opacity:0.5;
+}
+h3 {
+  border-bottom:1px,solid,black;
+}
+
+.topPage {
+  text-decoration: none;
+}
+
+.container a {
+
+  font-size:20px;
+  list-style: none;
+  margin-left:10px;
+  margin-right: 10px;
+}
+nav {
+  text-align: center;
+}
+
+/*メインコンテンツ*/
+.main {
+  margin-top: 150px;
+  flex:1;
+}
+.container {
+  text-align: center;
+}
+h2 {
+  font-size:35px;
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding:25px 0;
+  color:black;
+  
+}
+
+.koumoku-title {
+  font-size:20px;
+  text-align: center;
+  margin:30px 50px;
+}
 
 
-  <!--特集一覧-->
-    <div class="feature0">
-    <div class="koumoku-title" id="FEATURE">
-      <h2>FEATURE</h2>
-    </div>
-    <div class="feature1">
+.contents {
+  margin:0 auto;
+  width:100%;
+}
+.img-wrapper {
+  padding-top:50px;
+}
+/*スナップ写真*/
+.snap1 {
+  height:250px;
+  width:166px;
+}
+.snap1:hover {
+  opacity:0.3;
+}
+/*モーダル*/
+.image-modal-wrapper {
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color:rgba(0,0,0,0.6);
+  min-height:100vh;
+  display:none;
+  z-index:100;
+}
+.image-big1 {
+  display: none;
+  position: fixed;
+  top: 0;
+  right:0;
+  bottom:0;
+  left: 0;
+  height:55%;
+  text-align: center; 
+  margin: auto;
+  z-index: 4;
+  background-color: rgba(0,0,0,0.6);
+}
+.image-big2 {
+  display: none;
+  position: fixed;
+  top: 0;
+  right:0;
+  bottom:0;
+  left: 0;
+  height: 55%;
+  text-align: center; 
+  margin: auto;
+  z-index: 4;
+}
+.image-big3 {
+  display: none;
+  position: fixed;
+  top: 0;
+  right:0;
+  bottom:0;
+  left: 0;
+  height: 55%;
+  text-align: center; 
+  margin: auto;
+  z-index: 4;
+}
+.image-big4 {
+  display: none;
+  position: fixed;
+  top: 0;
+  right:0;
+  bottom:0;
+  left: 0;
+  height: 55%;
+  text-align: center; 
+  margin: auto;
+  z-index: 4;
+}
+.select-number-wrapper {
+  font-size:20px;
+  margin-top:20px;
+}
+.select-number {
+  display:inline-block;
 
-      <div class="feature2">
-        <a href="sneaker.html" class="sneaker">スニーカー特集</a>
-      </div>
-      
-      <img class="sneaker1 active" src="https://media.istockphoto.com/photos/great-sneaker-picture-id1079117394" width="800" height="500" alt="">
-      <img class="sneaker1" src="https://media.istockphoto.com/photos/sneakers-picture-id547128210?s=2048x2048" width="800" height="500" alt="">
-      <img  class="sneaker1" src="https://media.istockphoto.com/photos/pastel-blue-sneakers-on-crossed-legs-casual-footwear-picture-id1180837581?s=2048x2048" width="800" height="500" alt="">
-      <img class="sneaker1" src="https://media.istockphoto.com/photos/canvas-shoes-picture-id171224469?s=2048x2048" width="800" height="500" alt="">
-      <div class="select-btn-wrapper">
-        <div class="select-btn">1</div>
-        <div class="select-btn">2</div>
-        <div class="select-btn">3</div>
-        <div class="select-btn">4</div>
-      </div>
+}
+.contents p {
+  font-size: 20px;
+  margin:20px;
+}
 
-      <div class="feature2"> 
-        <a href=# class="newcollection" target="_blank">最新コレクション</a>
-      </div>
-      <img src="https://media.istockphoto.com/photos/catwalk-runway-show-event-picture-id940236760" width="800" height="500" alt="">
+.contents-item {
+  width:25%;
+  float:left;
 
-      <div class="feature2">
-        <a href=# class="archive" target="_blank">アーカイブ特集</a>
-      </div>
-      <img src="https://media.istockphoto.com/photos/interior-of-clothing-store-picture-id1023611588" width="800" height="500" alt="">
+}
+
+/*特集*/
+
+.select-btn-wrapper {
+  font-size:25px;
+  color:white;
+}
+.select-btn {
+  display:inline-block;
+  margin-bottom:20px;
+  background-color: black;
+  padding:10px 20px;
+  cursor:pointer;
+}
+.select-btn:hover {
+  opacity:0.5;
+}
+.feature2 a {
+  margin:30px 0 10px 0;
+  font-size:25px;
+  cursor:pointer;
+  color:black;
+}
+.feature1 a:hover {
+  opacity:0.3;
+}
+.feature1 img {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.feature0 {
+  text-align: center;
+}
+
+.sneaker1 {
+  display:none;
+}
+
+.active {
+  display:inline-block;
+}
 
 
-    </div>
+/*問い合わせ*/
+.contactPage {
+  text-align: center;
+}
+textarea {
+  width:60%;
+  margin-bottom:10px;
+}
+.submit {
+  cursor: pointer;
+  width:100px;
+  margin-bottom:25px;
+}
+.contact-contents {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-contents h4 {
+  font-size:30px;
+}
+textarea {
+  width:439.19px;
+}
+.contactName {
+  width:439.19px;
+  height:30px;
+}
+form {
+  width:439.19px;
+}
+.contactP {
+  float:left;
+  font-size:15px;
+  margin:10px 0;
+}
+/*フッター */
+footer {
+  
+  width:100%;
+  background-color:black;
+  color:white;
+  margin-top:auto;
+  margin-bottom:0;
+  padding-bottom:10px;
+  
+}
+footer p {
+  margin-top:30px;
+  margin-left: 25px;
+  margin-bottom:0;
+}
+.fa-instagram {
+  margin-top:20px;
+  margin-left:25px;
+  margin-bottom:40px;
+  font-size:50px;
+  color:white;
+}
 
-    </div>
-   <!--問い合わせ-->
-    <div class="contactPage">
-      <div class="koumoku-title" id="CONTACT">
-        <h2>CONTACT</h2>
-      </div>
 
-      <div class="contact-contents">
-        <p>お問い合わせ</p>
-        <form action="sent.php">
+@media (max-width:1000px){
+  .header {
+    background-color:transparent;
+    color:black;
+  }
+  
+   h1 {
+     font-size:35px;
+     float:left;
+     padding:0;
+     margin-left:15px;
+     position:absolute;
+     top:15px;
+     color:black;
+   }
+ 
+  .scroll-btn {
+    display:none;
+  }
 
-          <textarea name="contact" id="" cols="100" rows="10"></textarea>
-          <br>
+ 
+.image-big1 {
+  box-sizing: border-box;
+  
+  height:60%;
+}
+.image-big2 {
+  box-sizing: border-box;
+  height:60%;
+}
+.image-big3 {
+  box-sizing: border-box;
+  height:60%;
+}
+.image-big4 {
+  box-sizing: border-box;
+  height:60%;
+}
+
+
+}
+@media (orientation:portrait) {
+.header {
+  background-color:transparent;
+  color:black;
+}
+
+ h1 {
+   font-size:20px;
+   float:left;
+   padding:0;
+   margin-left:15px;
+   position:absolute;
+   top:15px;
+   color:black;
+ }
+ h2 {
+   font-size:25px;
+   padding:0;
+   margin:0;
+ }
+ h3 {
+   font-size:25px;
+ }
+ .main {
+   margin:110px 0;
+ }
+ .select-btn {
+   font-size:15px;
+   padding:5px 10px;
+ }
+ .feature2 a{
+   font-size:20px;
+ }
+ 
+ .grav h3 {
+   margin-top:25px;
+ }
+ .img-wrapper {
+   display:flex;
+   flex-wrap:wrap;
+ }
+ .contents-item {
+   width:50%;
+ }
+ .contents p{
+  font-size:15px;
+ }
+ 
+ .snap1 {
+   height:70%;
+   width:40%;
+ }
+ .snap2 {
+   height:70%;
+   width:40%;
+ }
+ .snap3 {
+   height:70%;
+   width:40%;
+ }
+ .snap4 {
+   height:70%;
+   width:40%;
+ }
+ 
+  .feature1{ 
+    margin:0 10px;
     
-          <input type="submit" class="submit">
-        </form>
-        
-      </div>
-    </div>
-  </div>
+  }
+  .feature1 img {
+    box-sizing: border-box;
+    height:50%;
+    width:60%;
+  }
+  .contactPage p{
+    font-size:20px;
+  }
 
-  <footer>
-   <h3>スナップサイト<h3>
-  </footer>
-    <script src="script.js"></script>
-  </div>
-  </body>
-</html>
+}
