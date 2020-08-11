@@ -321,6 +321,11 @@ form {
   margin-left:0;
   text-align: left;
 }
+.know-site{
+  margin-left:0;
+  width:50%;
+  text-align: left;
+}
 /*フッター */
 footer {
   
@@ -463,12 +468,20 @@ footer p {
     margin:0 10px;
     
   }
-  
+  form {
+    width:80%;
+  }
   .contactPage p{
     font-size:20px;
   }
   .contactName {
     height:25px;
   }
-  
+  .gender-select {
+    width:50%;
+    
+  }
+  .know-site{
+    width:100%;
+  }
 }
