@@ -1,7 +1,7 @@
 $(function(){
   //スナップ写真//
   $('.snap1').click(function(){
-    $('#image-modal').fadeIn();
+    $('.image-modal-wrapper').fadeIn();
   });
   $('#snap1-big').click(function(){
     $('.image-big1').fadeIn();
@@ -57,11 +57,23 @@ $(function(){
  $('.list').click(function(){
    $('.grav').fadeOut();
  });
-
+//ヘッダー//
  $('.header').click(function(){
    $('html,body').scrollTop(0);
+   
  });
-
  
+//問い合わせ//
+
+ var startPos =0,winScrollTop=0;
+ $(window).on(scroll,function(){
+   winScrollTop = $(this).scrollTop();
+   if (winScrollTop >= startPos){
+     $('.header').addClass('hide');
+   } else {
+     $('header').removeClass('hide');
+   }
+  startPos = winScrollTop;
+ });
 
 });
