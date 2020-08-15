@@ -13,7 +13,7 @@
   </head>
   <body id="body">
     <div id="wrapper">
-    <div class="header">
+    <header class="header" id="header">
       <div class="headcontainer">
 
         <div class="container-tiltle">
@@ -50,7 +50,7 @@
         
       </nav>
       </div>
-    </div>
+    </header>
 
 
   <!--スナップ写真一覧-->
@@ -145,17 +145,17 @@
     <div class="contactPage">
       <div class="koumoku-title" id="CONTACT">
         <h2>CONTACT</h2>
+        <h4>お問い合わせ</h4>
       </div>
 
-
        <div class="contact-contents">
-         <h4>お問い合わせ</h4>
-         <form action="index.php">
+         
+        
            <p class="contactP">名前</p>
            <input type="text" class="contactName">
            <div class="gender-select">
 
-             <p>性別</p>
+             <p class="contactP">性別</p>
              <select name="gender" id="">
                <option value="">未選択</option>
                <option value="">男</option>
@@ -165,7 +165,7 @@
            </div>
            <div class="know-site">
 
-             <p>サイトを何で知りましたか？</p>
+             <p class="contactP">サイトを何で知りましたか？</p>
              <label><input type="radio" name="sns">instagram</label>
              <label><input type="radio" name="sns">Twitter</label>
              <label><input type="radio" name="sns">その他</label>
@@ -176,7 +176,7 @@
            <br>
      
            <input type="submit" class="submit">
-         </form>
+  
          
        </div>
     </div>
