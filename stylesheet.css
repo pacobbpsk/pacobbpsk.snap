@@ -13,10 +13,17 @@ body,#wrapper {
   margin:0;
   position:fixed;
   top:0px;
+  left:0;
   z-index:80;
   width:100%;
   color:black;
   float: left;
+  background-color:white;
+  padding-bottom:10px;
+  transition:.5s;
+}
+.header.hide {
+ transform:translateY(-100%);
 }
 h1 {
   color:black;
@@ -47,7 +54,6 @@ h1:hover {
   width:100%;
   border-left:2px solid black;
   font-size:30px;
-  z-index:100;
  }
  .grav h3 {
    padding-top:20px;
@@ -277,9 +283,7 @@ h2 {
 
 
 /*問い合わせ*/
-.contactPage {
-  text-align: center;
-}
+
 textarea {
   width:60%;
   margin-bottom:10px;
@@ -292,10 +296,11 @@ textarea {
 .contact-contents {
   display:flex;
   flex-direction: column;
-  align-items: center;
+  width:45%;
+  margin:25px auto;
 }
-.contact-contents h4 {
-  font-size:30px;
+.koumoku-title h4 {
+  font-size:25px;
 }
 select {
   height:30px;
@@ -309,23 +314,20 @@ textarea {
   width:100%;
   height:30px;
 }
-form {
-  width:45%;
-}
+
 .contactP {
   font-size:15px;
   margin:10px 0;
-  float:left;
+  text-align: left;
+  width:100%;
 }
 .gender-select {
   width:12%;
   margin-left:0;
   text-align: left;
 }
-.know-site{
-  margin-left:0;
-  width:50%;
-  text-align: left;
+.submit {
+  margin:0 auto;
 }
 /*フッター */
 footer {
@@ -469,9 +471,9 @@ footer p {
     margin:0 10px;
     
   }
-  form {
-    width:80%;
-  }
+ .contact-contents{
+   width:80%;
+ }
   
   .contactPage p{
     font-size:20px;
@@ -479,11 +481,8 @@ footer p {
   .contactName {
     height:25px;
   }
-  .gender-select {
-    width:25%;
-    
+  select {
+    width:100px;
   }
-  .know-site{
-    width:100%;
-  }
+
 }
